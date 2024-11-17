@@ -45,8 +45,8 @@ jobs:
           export SUBARCH="arm64"
           export CROSS_COMPILE="$GITHUB_WORKSPACE/workdir/gcc/bin/aarch64-linux-android-"
           cd $GITHUB_WORKSPACE/workdir/source/kernel-4.4
-          export OPPO_TARGET_DEVICE="MSM_118011"
-          make O=out oppo6771_118011_debug_defconfig
+          export OPPO_TARGET_DEVICE="MSM_18011"
+          make O=out oppo6771_18011_debug_defconfig
           make -j$(nproc --all) O=out
 
       - name: Check a kernel output files
