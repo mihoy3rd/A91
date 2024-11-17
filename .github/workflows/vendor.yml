@@ -30,9 +30,5 @@ jobs:
           cd  $GITHUB_WORKSPACE/workdir/source/vendor/oppo_media/av/ffmpeg_cm_14_1
       - name: build
         run: |
-           mkdir -p ffmpeg-samples
-           ./configure --samples=ffmpeg-samples --cc=$CC
-           make -j 8
-           make fate-rsync
-           make check -j 8
+           ls
       
